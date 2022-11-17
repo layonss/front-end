@@ -1,0 +1,100 @@
+.center {
+    text-align: center;
+}
+
+.conteiner {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li {
+    display: inline;
+    padding: 50px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+
+}
+
+#menu li a:hover {
+    color: rgb(171, 2, 2);
+    font-size: 90px;
+
+}
+
+.p-30 {
+    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.br-50 {
+    border-radius: 50%;
+    color: black;
+    border: 50px;
+}
+
+.wh-300 {
+    width: 500px;
+    height: 800px;
+}
+
+.tm-social {
+    width: 60px;
+    height: 60px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.justfy {
+    text-align: justify;
+}
+
+.p {
+    color: white;
+    font-size: large;
+    font-variant: small-caps;
+    font-style: oblique;
+}
+
+.b {
+    background-color: rgb(171, 2, 2);
+    font-style: oblique;
+}
+
+.t {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(https://sm.ign.com/ign_br/screenshot/default/411979d6-5c8f-11e5-aaf2-005056b70bb8_z8ev.jpg);
+    background-position: right;
+    background-size: cover;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.preto {
+    color: white;
+    font-size: large;
+    font-style: oblique;
+}
+
+.poi{
+    cursor: pointer;
+}
+
+.border{
+    transition: all .5s;
+    border: 10px solid transparent;
+}

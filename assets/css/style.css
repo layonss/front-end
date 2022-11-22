@@ -1,0 +1,24 @@
+.back{
+    background-color:firebrick;
+}
+.pont{
+    list-style: none;
+}
+.img1{
+    width: 900px;
+    height: 900px;
+}
+.tm-social{
+    width: 40px;
+    height: 40px;
+}
+.norow{
+    flex: row-reverse;
+}
+.center{
+    text-align: center;
+}
+.i{
+    justify-content: center;
+    align-items: center;
+}

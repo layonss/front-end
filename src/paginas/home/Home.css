@@ -1,0 +1,196 @@
+#menu li {
+    display: inline;
+    padding: 50px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+
+}
+
+#menu li a:hover {
+    color: rgb(171, 2, 2);
+    font-size: 90px;
+}
+.center {
+    text-align: center;
+}
+
+.conteiner {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.b{
+    background-color: orange;
+}
+.t{
+    transition: all .5s;
+}
+.f{
+    width: 400px;
+    height: 400px;
+}
+
+
+
+#slider [type="radio"] {
+    display: none;
+  }
+
+  #slider {
+    height: 20vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    width: 920px;
+margin-bottom: 15%;
+  }
+
+  #slider label {
+    margin: auto;
+    width: 80%;
+    height: auto;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+
+  #slider label img {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+  }
+
+  #s1:checked ~ #slide4,
+  #s2:checked ~ #slide5,
+  #s3:checked ~ #slide1,
+  #s4:checked ~ #slide2,
+  #s5:checked ~ #slide3 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    transform: translate3d(-30%, 0, -200px);
+  }
+
+  #s1:checked ~ #slide5,
+  #s2:checked ~ #slide1,
+  #s3:checked ~ #slide2,
+  #s4:checked ~ #slide3,
+  #s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    transform: translate3d(-15%, 0, -100px);
+  }
+
+  #s1:checked ~ #slide1,
+  #s2:checked ~ #slide2,
+  #s3:checked ~ #slide3,
+  #s4:checked ~ #slide4,
+  #s5:checked ~ #slide5 {
+    box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3),
+      0 11px 7px 0 rgba(0, 0, 0, 0.19);
+    transform: translate3d(0, 0, 0);
+  }
+
+  #s1:checked ~ #slide2,
+  #s2:checked ~ #slide3,
+  #s3:checked ~ #slide4,
+  #s4:checked ~ #slide5,
+  #s5:checked ~ #slide1 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    transform: translate3d(15%, 0, -100px);
+  }
+
+  #s1:checked ~ #slide3,
+  #s2:checked ~ #slide4,
+  #s3:checked ~ #slide5,
+  #s4:checked ~ #slide1,
+  #s5:checked ~ #slide2 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    transform: translate3d(30%, 0, -200px);
+  }
+
+  #slide1 {
+    background: #00bcd4;
+  }
+  #slide2 {
+    background: #4caf50;
+  }
+  #slide3 {
+    background: #cddc39;
+  }
+  #slide4 {
+    background: #ffc107;
+  }
+  #slide5 {
+    background: #ff5722;
+  }
+  @media (min-width: 1200px) {
+    #slider {
+      height: 20vw;
+    }
+  }
+  @media (max-width: 1024px) {
+    #slider {
+      width: 850px !important;
+      height: 30vw;
+    }
+  }
+  @media (max-width: 991px) {
+    #slider {
+      width: 750px !important;
+      height: 35vw;
+    }
+  }
+  @media (max-width: 767px) {
+    #slider {
+      width: 550px !important;
+      height: 30vw;
+    }
+  }
+  @media (max-width: 575px) {
+    #slider {
+      width: 500px !important;
+      height: 35vw;
+    }
+  }
+
+ /* I pad Pro Landscape */
+  @media all and (device-width: 1366px) and (device-height: 1024px) and (orientation: landscape) {
+ #slider {
+
+      height: 25vw;
+    }
+  }
+
+  /* I pad portrait */
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+    #slider {
+      width: 650px !important;
+      height: 30vw;
+    }
+  }
+  @media only screen and (min-width: 375px) and (max-width: 420px) {
+    #slider {
+      width: 320px !important;
+      height: 35vw;
+    }
+    #slider label {
+      width: 75% !important;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    #slider {
+      width: 300px !important;
+      height: 30vw;
+    }
+
+    #slider label {
+      width: 65% !important;
+    }
+  }
